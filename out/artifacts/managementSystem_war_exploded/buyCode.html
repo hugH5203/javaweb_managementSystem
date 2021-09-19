@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>订单支付</title>
+    <style>
+        div {
+            text-align: center;
+        }
+
+        img {
+            width: 280px;
+            height: 550px;
+            margin-top: 60px;
+        }
+
+        .wx {
+            margin-left: 100px;
+        }
+
+        button {
+            width: 100px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <img src="img/zfb2code.jpg" alt="支付宝收款码" title="我，支付宝，打钱！">
+    <img class="wx" src="img/wx2code.jpg" alt="微信收款码" title="我，微信，打钱！">
+</div>
+<div>
+    <button id="button">返回订单页面</button>
+</div>
+<script>
+    document.getElementById("button").onclick = function () {
+        history.go(-1);
+    }
+</script>
+</body>
+</html>
